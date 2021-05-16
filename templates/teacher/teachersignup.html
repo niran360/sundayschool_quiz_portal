@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 {% load widget_tweaks %}
 <html lang="en" dir="ltr">
   <head>
@@ -18,7 +18,7 @@
 
 
 <br><br><br>
-<h3 style="text-align: center;color: red;">TEACHER SIGNUP</h3>
+<h1 style="text-align: center;color: #17A2B8;;">Teacher Signup</h1>
 <form method="POST" autocomplete="off" enctype="multipart/form-data">
     {% csrf_token %}
     <div class="form-row">
@@ -53,6 +53,17 @@
           {% render_field teacherForm.address|attr:'required:true'  class="form-control" placeholder="Address" %}
         </div>
       </div>
+      
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="mobile">Parsh Name</label>
+          {% render_field teacherForm.mobile|attr:'required:true'  class="form-control" placeholder="BGP" %}
+        </div>
+        <div class="form-group col-md-6">
+          <label for="address">Province</label>
+          {% render_field teacherForm.address|attr:'required:true'  class="form-control" placeholder="LP77" %}
+        </div>
+      </div>
 
       <div class="form-row">
         <div class="form-group col-md-12">
@@ -70,4 +81,4 @@
 <br><br>
 {% include "quiz/footer.html" %}
   </body>
-</html> -->
+</html>
