@@ -1,10 +1,13 @@
 from django.db import models
+from datetime import datetime
 
 from student.models import Student
 class Course(models.Model):
    course_name = models.CharField(max_length=50)
    question_number = models.PositiveIntegerField()
    total_marks = models.PositiveIntegerField()
+   start_time = models.DateTimeField(default=datetime.now())
+   end_time = models.DateTimeField(default=datetime.now())
    def __str__(self):
         return self.course_name
 

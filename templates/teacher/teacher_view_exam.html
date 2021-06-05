@@ -32,19 +32,31 @@
         <tr>
 
           <th>Course Name</th>
+
           <th>Total Question</th>
+
           <th>Total Marks</th>
+
           <th>Delete</th>
+
+          <th>Start Time</th>
+          <th>End Time</th>
         </tr>
       </thead>
       {% for t in courses %}
       <tr>
 
         <td> {{t.course_name}}</td>
+
         <td>{{t.question_number}}</td>
+
         <td>{{t.total_marks}}</td>
+
+        
         
         <td><a class="btn btn-danger btn-xs" href="{% url 'delete-exam' t.id  %}"><span class="glyphicon glyphicon-trash"></span></a></td>
+        <td>{{t.start_time}}</td>
+        <td>{{t.end_time}}</td>
       </tr>
       {% endfor %}
     </table>

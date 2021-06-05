@@ -6,7 +6,9 @@ class Student(models.Model):
     profile_pic= models.ImageField(upload_to='profile_pic/Student/',null=True,blank=True)
     address = models.CharField(max_length=40)
     mobile = models.CharField(max_length=20,null=False)
-   
+    parish_name = models.CharField(max_length=40,null=True)
+    province = models.CharField(max_length=40,null=True)
+    
     @property
     def get_name(self):
         return self.user.first_name+" "+self.user.last_name
