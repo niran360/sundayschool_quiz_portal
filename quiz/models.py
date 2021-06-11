@@ -1,5 +1,6 @@
 from django.db import models
 from datetime import datetime
+from django import forms
 
 from student.models import Student
 class Course(models.Model):
@@ -27,4 +28,16 @@ class Result(models.Model):
     exam = models.ForeignKey(Course,on_delete=models.CASCADE)
     marks = models.PositiveIntegerField()
     date = models.DateTimeField(auto_now=True)
+
+
+# class Meta:
+#         model = Course
+#         fields = '__all__'
+#         exclude = ['teacher']
+#         widgets = {
+#             'name': forms.TextInput(attrs = {'class':'form-control'}),
+#             'total_marks' : forms.NumberInput(attrs = {'class':'form-control'}),
+#             'start_time': forms.DateTimeInput(attrs = {'class':'form-control'}),
+#             'end_time': forms.DateTimeInput(attrs = {'class':'form-control'})
+#         }
 
