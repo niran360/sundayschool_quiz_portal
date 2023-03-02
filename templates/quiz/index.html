@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<style>
+  .jumbotron{
+    margin-bottom: 0px;
+  }
+</style>
+<body>
+  {% include "quiz/navbar.html" %}
+<br>
+<section id="section-jumbotron" class="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center">
+  <div class="container text-center">
+    <h1 class="display-1 text-info">RCCG Region 19</h1>
+    <p class="display-4 d-none d-sm-block">Welcome to Sunday School Quiz Portal.</p>
+    <p class="lead">Please click the Sign Up button to register if you are a new User</p>
+
+    
+
+    <!-- <p class="lead">Just go ahead and and Sign In if you have registered.</p> -->
+    <p><strong> Register Here:</strong></p>
+    <a href="/student/studentclick" class="btn btn-success" style="padding-right: 35px;"><i class="fa fa-user-plus" aria-hidden="true"></i> Student</a>
+    <a href="/teacher/teacherclick" class="btn btn-lg btn-info" style="padding-right: 35px;"><i class="fa fa-user-plus" aria-hidden="true"></i> Teacher</a>
+    
+    <br><br><br>
+  </div>  
+</section>
+  {% include "quiz/footer.html" %}
+
+
+</body>
+
+</html>
