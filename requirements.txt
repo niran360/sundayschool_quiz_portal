@@ -36,22 +36,22 @@ isodate==0.6.1
 jedi==0.18.2
 Jinja2==3.1.2
 jsonschema==4.17.3
-jupyter-console==6.6.3
-jupyter-server==1.23.6
-jupyter_client==7.4.9
-jupyter_core==4.12.0
-jupyterlab-pygments==0.2.2
-jupyterlab-widgets==3.0.6
-MarkupSafe==2.1.2
-matplotlib-inline==0.1.6
+# jupyter-console==6.6.3
+# jupyter-server==1.23.6
+# jupyter_client==7.4.9
+# jupyter_core==4.12.0
+# jupyterlab-pygments==0.2.2
+# jupyterlab-widgets==3.0.6
+# MarkupSafe==2.1.2
+# matplotlib-inline==0.1.6
 mistune==2.0.5
 nbclassic==0.5.3
 nbclient==0.7.2
 nbconvert==7.2.10
 nbformat==5.8.0
 nest-asyncio==1.5.6
-notebook==6.5.3
-notebook_shim==0.2.2
+# notebook==6.5.3
+# notebook_shim==0.2.2
 packaging==23.0
 pandocfilters==1.5.0
 parso==0.8.3
@@ -62,7 +62,7 @@ platformdirs==2.6.2
 prometheus-client==0.16.0
 prompt-toolkit==3.0.38
 psutil==5.9.4
-psycopg2==2.8.6
+# psycopg2==2.8.6
 pycparser==2.21
 Pygments==2.14.0
 pyodbc==4.0.35
